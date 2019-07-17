@@ -60,8 +60,37 @@ img
 
 .question
 {
+	margin-left:35vw;
 	margin-top: 200 px;
 	font-family: 'Merriweather', serif;
-	font-size: 1em;
-	color: #b89400;
+	font-size: 2em;
+	color: #000000;
 }
+
+.pizzascroll
+{
+	border-radius: 50%;
+	border-style: dashed;
+	border-width: 5px;
+	border-color: #f7b96c;
+	height:25vh;
+	width:25vw;
+	background-image: url("calabresa.jpg");
+	background-size: 25vh 25vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.pizzascroll:hover
+{
+	animation: mudapizzas 20s infinite;
+}
+
+@keyframes mudapizzas
+{
+	0%,100% {background-image: url("calabresa.jpg");}
+	25% {background-image: url("frango_catupiry.jpg");}
+	50% {background-image: url("mussarela.jpg");}
+	75% {background-image: url("chocopizza.jpg");}
+}
+
+
