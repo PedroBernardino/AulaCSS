@@ -28,19 +28,16 @@ img
 {
 	border-radius: 50%;
 	border-style: dashed;
-	border-width: 5px;
+	border-width: 2px;
 	border-color: #f7b96c;
-	height: 20vw;
+	height: 15vh;
+	width:  20vw
 }
 
-.pizza1
+.imagens
 {
-	left:1vw;
-}
-.pizza2
-{
-	position: absolute;
-	right:1vw;
+	display:flex;
+	justify-content: space-between;
 }
 
 .subtitle
@@ -71,7 +68,7 @@ img
 {
 	border-radius: 50%;
 	border-style: dashed;
-	border-width: 5px;
+	border-width: 2px;
 	border-color: #f7b96c;
 	height:25vh;
 	width:25vw;
@@ -93,4 +90,12 @@ img
 	75% {background-image: url("chocopizza.jpg");}
 }
 
-
+@media only screen and (max-width:500px)
+{
+	img
+	{
+		height:10vh;
+		width:20vw;
+		justify-content:space-around;
+	}
+}
